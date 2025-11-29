@@ -1,65 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8"/>
-    <title>Karan Mukhi</title>
-    <!-- Replace the existing favicon line with these -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karan Mukhi | DPhil Student & Researcher</title>
+    <meta name="description"
+        content="Karan Mukhi - DPhil Student in Computer Science at University of Oxford, specializing in robust optimization for power systems.">
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
-    <link href="web.css" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        WebFont.load({
-            google: {
-                families: ["Raleway:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"]
-            }
-        });
-    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="columns w-row">
-        <div class="w-col w-col-6 w-col-medium-6 w-col-small-small-stack">
-            <div class="name-text">Karan Mukhi<br/></div>
-            <div class="section">
-                I am a final year DPhil (PhD) student in Computer Science at the University of Oxford, in the <a href="https://oxcav.web.ox.ac.uk/">Oxford Control and Verification</a> group under the supervision of Alessandro Abate.  Previously, I earned an MPhys in Theoretical Physics from the University of Manchester.
-                <br></br>
-                My research focuses on robust, computationally tractable optimisation methods for large-scale power systems. I focus on coordinating populations of controllable domestic devices, such as EVs and heat pumps, and creating practical tools that enable aggregators to unlock their flexibility.
-                I care a lot about building a sustainable energy system. 
-                <br></br>
-                Prior to my PhD, I worked at <a href="https://www.nationalgrid.com/electricity-transmission/">National Grid ET</a> as a data scientist, and at <a href="https://electron.net/">Electron</a> as a software engineer.  I also collaborated with <a href="https://www.openclimatefix.org/">Open Climate Fix</a> on the development of a mobile app, and I interned at <a href="https://ccfe.ukaea.uk/">CCFE</a> working on nuclear fusion research. 
-                
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Karan Mukhi</a>
+            <button class="mobile-menu-btn">☰</button>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm Karan!</h1>
+                <p>
+                    I am a final year DPhil (PhD) student in Computer Science at the University of Oxford,
+                    working in the <a href="https://oxcav.web.ox.ac.uk/" target="_blank">Oxford Control and
+                        Verification</a> group
+                    under the supervision of Alessandro Abate.
+                </p>
+                <p>
+                    My research focuses on robust, computationally tractable optimisation methods for large-scale power
+                    systems.
+                    I coordinate populations of controllable domestic devices, such as EVs and heat pumps, to unlock
+                    their flexibility
+                    for a sustainable energy grid.
+                </p>
+                <p>
+                    I care a lot about building sustainable energy systems. Prior to my PhD, I worked at <a
+                        href="https://www.nationalgrid.com/electricity-transmission/">National Grid ET</a> as a data
+                    scientist, and at <a href="https://electron.net/">Electron</a> as a software engineer. I also
+                    collaborated with <a href="https://www.openclimatefix.org/">Open Climate Fix</a> on the development
+                    of a mobile app, and I interned at <a href="https://ccfe.ukaea.uk/">CCFE</a> working on nuclear
+                    fusion research.
+                </p>
+            </div>
+            <div class="hero-image-container">
+                <img src="karan_v2.jpg" alt="Karan Mukhi" class="hero-image">
             </div>
         </div>
-        <div class="column w-col w-col-6 w-col-medium-6 w-col-small-small-stack">
-            <img src="karan_v2.jpg" loading="lazy" width="300" sizes="(max-width: 479px) 79vw, 300px" alt="" class="image"/>
-        </div>
-    </div>
+    </section>
 
-        <div class="w-col w-col-6">
-            <div class="section-2 wf-section">
-                <h3 class="heading">News</h3>
-                <div class="text-block">
-                    <ul>
-                        <li>(February 2025) Our <a href="https://arxiv.org/pdf/2405.08232">paper</a> on Robust Aggregation of EVs was accpeted at ACM HSCC.</li>
-                        <li>(May 2024) Our work on distributionally robust EV aggregation won the best poster award at the DTU summer school, here's a <a href="https://www.youtube.com/watch?v=rU2M0eSEzc4">link</a> to the talk.</li>
-                        <li>(February 2024) Our <a href="https://arxiv.org/pdf/2306.16824">paper</a> on EV flexiblity aggregation was nominated for the Roberto Tempo Best CDC Paper Award won the best poster award.
-                    </ul>
+    <!-- News Section -->
+    <section id="news">
+        <div class="container">
+            <h2>Latest News</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <span class="card-date">August 2025</span>
+                    <h3>DTU Visit</h3>
+                    <p>I spent the summer at DTU working with Licio Romao, extending my work to model aggregations in
+                        multistage stochastic imbalance markets.</p>
+                </div>
+                <div class="card">
+                    <span class="card-date">May 2024</span>
+                    <h3>Best Poster Award</h3>
+                    <p>My work on distributionally robust EV aggregation won the best poster award at the DTU summer
+                        school.<br> Watch the talk <a href="https://www.youtube.com/watch?v=rU2M0eSEzc4"
+                            target="_blank">here</a>.</p>
+                </div>
+                <div class="card">
+                    <span class="card-date">February 2024</span>
+                    <h3>Award Nomination</h3>
+                    <p>My <a href="https://arxiv.org/pdf/2306.16824" target="_blank">paper</a> on EV flexibility
+                        aggregation was nominated for the Roberto Tempo Best CDC Paper Award.</p>
                 </div>
             </div>
+        </div>
+    </section>
 
-    <div class="w-row">
-        <div class="w-col w-col-6">
-            <div class="section-2 wf-section">
-                <h3 class="heading">Links and Contact</h3>
-                <a href="https://scholar.google.com/citations?user=4lPPIqMAAAAJ&hl=en">google scholar</a></br>
-                <a href="mailto:karan.mukhi@cs.ox.ac.uk">email</a></br>
-                <a href="https://github.com/karanmukhi">github</a></br>
-                <a href="https://www.linkedin.com/in/karan-mukhi-12774713b/">linkedin</a></br>
-                <a href="karan_mukhi_cv.pdf">CV</a></br>
+
+    <!-- Links/Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Connect</h2>
+            <div class="links-grid">
+                <a href="mailto:karan.mukhi@cs.ox.ac.uk" class="link-card">
+                    <span>Email</span>
+                </a>
+                <a href="https://scholar.google.com/citations?user=4lPPIqMAAAAJ&hl=en" target="_blank"
+                    class="link-card">
+                    <span>Google Scholar</span>
+                </a>
+                <a href="https://github.com/karanmukhi" target="_blank" class="link-card">
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/karan-mukhi-12774713b/" target="_blank" class="link-card">
+                    <span>LinkedIn</span>
+                </a>
+                <a href="karan_mukhi_cv.pdf" target="_blank" class="link-card">
+                    <span>Download CV</span>
+                </a>
             </div>
         </div>
-    </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Karan Mukhi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
